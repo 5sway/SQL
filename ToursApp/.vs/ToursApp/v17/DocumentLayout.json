@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SQL\\ToursApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|d:\\sql\\toursapp\\toursapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|solutionrelative:toursapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\SQL\\ToursApp\\ToursApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ToursApp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\SQL\\ToursApp\\ToursApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ToursApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T17:59:33.5Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
