@@ -12,7 +12,7 @@ namespace ToursApp
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class ToursBaseEntities : DbContext
     {
         private static ToursBaseEntities _context;
@@ -28,12 +28,12 @@ namespace ToursApp
 
             return _context;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<Country> Country { get; set; }
         public virtual DbSet<Hotel> Hotel { get; set; }
         public virtual DbSet<HotelComment> HotelComment { get; set; }

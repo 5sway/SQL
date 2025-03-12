@@ -11,7 +11,7 @@ namespace ToursApp
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Tour
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,7 +20,7 @@ namespace ToursApp
             this.Hotel = new HashSet<Hotel>();
             this.Type = new HashSet<Type>();
         }
-
+    
         public int Id { get; set; }
         public int TicketsCount { get; set; }
         public string Name { get; set; }
@@ -28,6 +28,14 @@ namespace ToursApp
         public byte[] ImagePreview { get; set; }
         public decimal Price { get; set; }
         public bool IsActual { get; set; }
+
+        public string ActualText
+        {
+            get
+            {
+                return (IsActual) ? "Актуален" : "Завершен";
+            }
+        }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Hotel> Hotel { get; set; }

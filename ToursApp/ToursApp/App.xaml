@@ -11,10 +11,6 @@
             <Setter Property="Background" Value="#fac716"></Setter>
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
         </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-        </Style>
         <Style TargetType="TextBox">
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
