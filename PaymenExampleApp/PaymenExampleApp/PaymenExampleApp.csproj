@@ -48,6 +48,10 @@
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -154,6 +158,12 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Болгарское-наследие.png" />
+    <Resource Include="Assets\Волшебный-Восток.png" />
+    <Resource Include="Assets\Город-с-большими-амбициями.png" />
+    <Resource Include="Assets\Город-четырех-ворот.png" />
+    <Resource Include="Assets\Горячий-отдых-зимой-и-летом.png" />
+    <Resource Include="Assets\Icon.png" />
     <Content Include="PaymentsModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>PaymentsModel.edmx</DependentUpon>

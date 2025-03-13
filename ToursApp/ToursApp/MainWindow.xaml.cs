@@ -25,7 +25,7 @@ namespace ToursApp
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ToursPage());
+            MainFrame.Navigate(new HotelsPage());
             Manager.MainFrame = MainFrame;
 
             //ImportTours();

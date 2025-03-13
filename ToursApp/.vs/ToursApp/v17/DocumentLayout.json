@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SQL\\ToursApp\\",
+  "WorkspaceRootPath": "D:\\SQL-main\\ToursApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|d:\\sql\\toursapp\\toursapp\\tourspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|d:\\sql-main\\toursapp\\toursapp\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|solutionrelative:toursapp\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|d:\\sql-main\\toursapp\\toursapp\\tourspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|solutionrelative:toursapp\\tourspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|d:\\sql\\toursapp\\toursapp\\tourspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|D:\\SQL-main\\ToursApp\\toursapp\\tourspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|solutionrelative:toursapp\\tourspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|d:\\sql-main\\toursapp\\toursapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99EB979-3E2C-4997-8394-4E3B543A4DB2}|ToursApp\\ToursApp.csproj|solutionrelative:toursapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,23 +31,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Country.cs",
+              "DocumentMoniker": "D:\\SQL-main\\ToursApp\\ToursApp\\Country.cs",
+              "RelativeDocumentMoniker": "ToursApp\\Country.cs",
+              "ToolTip": "D:\\SQL-main\\ToursApp\\ToursApp\\Country.cs",
+              "RelativeToolTip": "ToursApp\\Country.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T07:19:18.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\SQL-main\\ToursApp\\ToursApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ToursApp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\SQL-main\\ToursApp\\ToursApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ToursApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T07:17:07.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ToursPage.xaml.cs",
-              "DocumentMoniker": "D:\\SQL\\ToursApp\\ToursApp\\ToursPage.xaml.cs",
+              "DocumentMoniker": "D:\\SQL-main\\ToursApp\\ToursApp\\ToursPage.xaml.cs",
               "RelativeDocumentMoniker": "ToursApp\\ToursPage.xaml.cs",
-              "ToolTip": "D:\\SQL\\ToursApp\\ToursApp\\ToursPage.xaml.cs",
+              "ToolTip": "D:\\SQL-main\\ToursApp\\ToursApp\\ToursPage.xaml.cs",
               "RelativeToolTip": "ToursApp\\ToursPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T17:26:15.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ToursPage.xaml",
-              "DocumentMoniker": "D:\\SQL\\ToursApp\\ToursApp\\ToursPage.xaml",
+              "DocumentMoniker": "D:\\SQL-main\\ToursApp\\ToursApp\\ToursPage.xaml",
               "RelativeDocumentMoniker": "ToursApp\\ToursPage.xaml",
-              "ToolTip": "D:\\SQL\\ToursApp\\ToursApp\\ToursPage.xaml",
+              "ToolTip": "D:\\SQL-main\\ToursApp\\ToursApp\\ToursPage.xaml",
               "RelativeToolTip": "ToursApp\\ToursPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-12T17:16:53.136Z",

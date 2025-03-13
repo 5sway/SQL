@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SQL\\PaymenExampleApp\\",
+  "WorkspaceRootPath": "D:\\SQL-main\\PaymenExampleApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|d:\\sql\\paymenexampleapp\\paymenexampleapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|d:\\sql-main\\paymenexampleapp\\paymenexampleapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|solutionrelative:paymenexampleapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|d:\\sql\\paymenexampleapp\\paymenexampleapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|solutionrelative:paymenexampleapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|d:\\sql\\paymenexampleapp\\paymenexampleapp\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|solutionrelative:paymenexampleapp\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|d:\\sql\\paymenexampleapp\\paymenexampleapp\\paymentsmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|solutionrelative:paymenexampleapp\\paymentsmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "packages.config",
-              "DocumentMoniker": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\packages.config",
-              "RelativeDocumentMoniker": "PaymenExampleApp\\packages.config",
-              "ToolTip": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\packages.config",
-              "RelativeToolTip": "PaymenExampleApp\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-13T09:39:49.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "PaymenExampleApp\\MainWindow.xaml",
-              "ToolTip": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\MainWindow.xaml",
-              "RelativeToolTip": "PaymenExampleApp\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-13T07:03:34.541Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\SQL-main\\PaymenExampleApp\\PaymenExampleApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PaymenExampleApp\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\SQL-main\\PaymenExampleApp\\PaymenExampleApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "PaymenExampleApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAgwG0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAqwIoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:03:32.597Z",
+              "WhenOpened": "2025-03-14T06:22:45.875Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentsModel.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\PaymentsModel.edmx",
-              "RelativeDocumentMoniker": "PaymenExampleApp\\PaymentsModel.edmx",
-              "ToolTip": "D:\\SQL\\PaymenExampleApp\\PaymenExampleApp\\PaymentsModel.edmx [Diagram1]",
-              "RelativeToolTip": "PaymenExampleApp\\PaymentsModel.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-03-13T11:16:23.09Z",
-              "EditorCaption": " [Diagram1]"
             }
           ]
         }

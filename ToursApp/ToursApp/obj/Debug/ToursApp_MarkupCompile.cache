@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\SQL\ToursApp\ToursApp\obj\Debug\
+D:\SQL-main\ToursApp\ToursApp\obj\Debug\
 ToursApp
 none
 false
 DEBUG;TRACE
-D:\SQL\ToursApp\ToursApp\App.xaml
+D:\SQL-main\ToursApp\ToursApp\App.xaml
 4561920015
 2-1161474625
 19-152700843
-181673624009
+18-274746763
 AddEditPage.xaml;HotelsPage.xaml;MainWindow.xaml;ToursPage.xaml;
 
-True
+False
 
