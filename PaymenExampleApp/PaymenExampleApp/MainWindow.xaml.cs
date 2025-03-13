@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Excel = Microsoft.Office.Interop.Excel;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace PaymenExampleApp
 {
@@ -56,7 +57,7 @@ namespace PaymenExampleApp
                     currentSeries.Points.AddXY(category.Name,
                         _context.Payment.ToList().Where(p => p.User == currentUser
                         && p.Category == category).Sum(p => p.Price * p.Num));
-                 }
+                }
             }
         }
 
@@ -69,10 +70,10 @@ namespace PaymenExampleApp
 
             Excel.Workbook workbook = application.Workbooks.Add(Type.Missing);
 
-            int startRowIndex = 1;
 
             for (int i = 0; i < allUsers.Count(); i++)
             {
+                int startRowIndex = 1;
                 Excel.Worksheet worksheet = application.Worksheets.Item[i + 1];
                 worksheet.Name = allUsers[i].FIO;
 
@@ -105,8 +106,8 @@ namespace PaymenExampleApp
 
                         worksheet.Cells[5][startRowIndex].Formula = $"=C{startRowIndex}*D{startRowIndex}";
 
-                         worksheet.Cells[3][startRowIndex].NumberFormat =
-                            worksheet.Cells[3][startRowIndex].NumberFormat - "#,###.00";
+                        worksheet.Cells[3][startRowIndex].NumberFormat =
+                           worksheet.Cells[3][startRowIndex].NumberFormat = "#,###,00";
 
                         startRowIndex++;
                     }
@@ -120,7 +121,7 @@ namespace PaymenExampleApp
                         $"E{startRowIndex - 1})";
 
                     sumRange.Font.Bold = worksheet.Cells[5][startRowIndex].Font.Bold = true;
-                    worksheet.Cells[5][startRowIndex].NumberFormat = "#,###.00";
+                    worksheet.Cells[5][startRowIndex].NumberFormat = "#,###,00";
 
                     startRowIndex++;
 
@@ -136,6 +137,96 @@ namespace PaymenExampleApp
                 }
             }
             application.Visible = true;
+        }
+
+        private void BtnExportToWord_Click(object sender, RoutedEventArgs e)
+        {
+            var allUsers = _context.User.ToList();
+            var allCategories = _context.Category.ToList();
+
+            var application = new Word.Application();
+
+            Word.Document document = application.Documents.Add();
+
+            foreach (var user in allUsers)
+            {
+                Word.Paragraph userParagrapth = document.Paragraphs.Add();
+                Word.Range userRange = userParagrapth.Range;
+                userRange.Text = user.FIO;
+                userParagrapth.set_Style("Заголовок");
+                userRange.InsertParagraphAfter();
+
+                Word.Paragraph tableParagraph = document.Paragraphs.Add();
+                Word.Range tableRange = tableParagraph.Range;
+                Word.Table paymentsTable = document.Tables.Add(tableRange, allCategories.Count() + 1, 3);
+                paymentsTable.Borders.InsideLineStyle = paymentsTable.Borders.OutsideLineStyle
+                    = Word.WdLineStyle.wdLineStyleSingle;
+                paymentsTable.Range.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
+
+                Word.Range cellRange;
+
+                cellRange = paymentsTable.Cell(1, 1).Range;
+                cellRange.Text = "Иконка";
+                cellRange = paymentsTable.Cell(1, 2).Range;
+                cellRange.Text = "Категория";
+                cellRange = paymentsTable.Cell(1, 3).Range;
+                cellRange.Text = "Сумма расходов";
+
+                paymentsTable.Rows[1].Range.Bold = 1;
+                paymentsTable.Rows[1].Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+
+                for (int i =0; i < allCategories.Count(); i++)
+                {
+                    var currentCategory = allCategories[i];
+
+                    cellRange = paymentsTable.Cell(i + 2, 1).Range;
+                    //Word.InlineShape ImageShape = cellRange.InlineShapes.AddPicture(AppDomain.CurrentDomain.BaseDirectory
+                       // + "..//..//" + currentCategory.Icon);
+
+                    //ImageShape.Width = ImageShape.Height = 40;
+                    cellRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+
+                    cellRange = paymentsTable.Cell(i + 2, 2).Range;
+                    cellRange.Text = currentCategory.Name;
+
+                    cellRange = paymentsTable.Cell(i + 2, 3).Range;
+                    cellRange.Text = user.Payment.ToList().Where(p => p.Category == currentCategory).Sum(p => p.Num * p.Price).ToString("N2") + " руб.";
+
+                }
+
+                Payment maxPayment = user.Payment.OrderByDescending(p => p.Price * p.Num).FirstOrDefault();
+                if (maxPayment != null)
+                {
+                    Word.Paragraph maxPaymentParagraph = document.Paragraphs.Add();
+                    Word.Range maxPaymentRange = maxPaymentParagraph.Range;
+                    maxPaymentRange.Text = $"Самый дорогостоящий платеж - {maxPayment.Name} за {(maxPayment.Price * maxPayment.Num).ToString("N2")} " +
+                        $"руб. от {maxPayment.Date.ToString("dd.MM.yyyy HH:MM")}";
+                    maxPaymentParagraph.set_Style("Цитата 2");
+                    maxPaymentRange.Font.Color = Word.WdColor.wdColorDarkRed;
+                    maxPaymentRange.InsertParagraphAfter();
+                }
+
+                Payment minPayment = user.Payment.OrderBy(p => p.Price * p.Num).FirstOrDefault();
+                if (minPayment != null)
+                {
+                    Word.Paragraph minPaymentParagraph = document.Paragraphs.Add();
+                    Word.Range minPaymentRange = minPaymentParagraph.Range;
+                    minPaymentRange.Text = $"Самый дешевый платеж - {minPayment.Name} за {(minPayment.Price * minPayment.Num).ToString("N2")} " +
+                        $"руб. от {maxPayment.Date.ToString("dd.MM.yyyy HH:MM")}";
+                    minPaymentParagraph.set_Style("Цитата 2");
+                    minPaymentRange.Font.Color = Word.WdColor.wdColorDarkGreen;
+                }
+
+                if (user != allUsers.LastOrDefault())
+                {
+                    document.Words.Last.InsertBreak(Word.WdBreakType.wdPageBreak);
+                }
+            }
+            application.Visible = true;
+
+            document.SaveAs2(@"D:\SQL\Test.docx");
+            document.SaveAs2(@"D:\SQL\Test.pdf", Word.WdExportFormat.wdExportFormatPDF);
+
         }
     }
 }
