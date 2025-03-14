@@ -19,6 +19,7 @@ D:\SQL\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenExampleApp.csproj.CoreC
 D:\SQL\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenEx.EE814E61.Up2Date
 D:\SQL\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenExampleApp.exe
 D:\SQL\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenExampleApp.pdb
+<<<<<<< HEAD
 D:\SQL-main\PaymenExampleApp\PaymenExampleApp\bin\Debug\PaymenExampleApp.exe.config
 D:\SQL-main\PaymenExampleApp\PaymenExampleApp\bin\Debug\PaymenExampleApp.exe
 D:\SQL-main\PaymenExampleApp\PaymenExampleApp\bin\Debug\PaymenExampleApp.pdb
@@ -40,3 +41,5 @@ D:\SQL-main\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenExampleApp.csproj.
 D:\SQL-main\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenEx.EE814E61.Up2Date
 D:\SQL-main\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenExampleApp.exe
 D:\SQL-main\PaymenExampleApp\PaymenExampleApp\obj\Debug\PaymenExampleApp.pdb
+=======
+>>>>>>> 1bf984d7d3a19c1635f4504d168c8ab242815e64

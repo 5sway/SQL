@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\SQL-main\\PaymenExampleApp\\",
   "Documents": [
     {
@@ -7,6 +8,10 @@
       "RelativeMoniker": "D:0:0:{F7E1B3DE-A147-47EF-8932-87507F7DC535}|PaymenExampleApp\\PaymenExampleApp.csproj|solutionrelative:paymenexampleapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "D:\\SQL\\PaymenExampleApp\\",
+  "Documents": [],
+>>>>>>> 1bf984d7d3a19c1635f4504d168c8ab242815e64
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,6 +19,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -28,6 +34,13 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T06:22:45.875Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+>>>>>>> 1bf984d7d3a19c1635f4504d168c8ab242815e64
             }
           ]
         }

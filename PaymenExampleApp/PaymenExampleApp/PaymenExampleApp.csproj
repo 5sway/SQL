@@ -163,7 +163,10 @@
     <Resource Include="Assets\Город-с-большими-амбициями.png" />
     <Resource Include="Assets\Город-четырех-ворот.png" />
     <Resource Include="Assets\Горячий-отдых-зимой-и-летом.png" />
+<<<<<<< HEAD
     <Resource Include="Assets\Icon.png" />
+=======
+>>>>>>> 1bf984d7d3a19c1635f4504d168c8ab242815e64
     <Content Include="PaymentsModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>PaymentsModel.edmx</DependentUpon>

@@ -181,10 +181,17 @@ namespace PaymenExampleApp
                     var currentCategory = allCategories[i];
 
                     cellRange = paymentsTable.Cell(i + 2, 1).Range;
+<<<<<<< HEAD
                     string imagePath = @"D:\SQL-main\PaymenExampleApp\PaymenExampleApp\Assets\Icon.png";
                     Word.InlineShape ImageShape = cellRange.InlineShapes.AddPicture(imagePath);
 
                     ImageShape.Width = ImageShape.Height = 40;
+=======
+                    //Word.InlineShape ImageShape = cellRange.InlineShapes.AddPicture(AppDomain.CurrentDomain.BaseDirectory
+                       // + "..//..//" + currentCategory.Icon);
+
+                    //ImageShape.Width = ImageShape.Height = 40;
+>>>>>>> 1bf984d7d3a19c1635f4504d168c8ab242815e64
                     cellRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
 
                     cellRange = paymentsTable.Cell(i + 2, 2).Range;
@@ -225,8 +232,13 @@ namespace PaymenExampleApp
             }
             application.Visible = true;
 
+<<<<<<< HEAD
             document.SaveAs2(@"D:\Test.docx");
             document.SaveAs2(@"D:\Test.pdf", Word.WdExportFormat.wdExportFormatPDF);
+=======
+            document.SaveAs2(@"D:\SQL\Test.docx");
+            document.SaveAs2(@"D:\SQL\Test.pdf", Word.WdExportFormat.wdExportFormatPDF);
+>>>>>>> 1bf984d7d3a19c1635f4504d168c8ab242815e64
 
         }
     }
